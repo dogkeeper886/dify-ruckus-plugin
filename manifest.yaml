@@ -1,0 +1,45 @@
+version: 0.0.1
+type: plugin
+author: dogkeeper886
+name: ruckus_one
+label:
+  en_US: ruckus_one
+  ja_JP: ruckus_one
+  zh_Hans: ruckus_one
+  pt_BR: ruckus_one
+description:
+  en_US: This tool enables users to efficiently manage their Ruckus One tenant.
+  ja_JP: This tool enables users to efficiently manage their Ruckus One tenant.
+  zh_Hans: This tool enables users to efficiently manage their Ruckus One tenant.
+  pt_BR: This tool enables users to efficiently manage their Ruckus One tenant.
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    node:
+      enabled: false
+    endpoint:
+      enabled: false
+    app:
+      enabled: true
+    storage:
+      enabled: false
+      size: 0
+plugins:
+  tools:
+    - provider/ruckus_one.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+  minimum_dify_version: 1.0.0
+created_at: 2025-05-17T16:27:55.73320838+08:00
+privacy: PRIVACY.md
+verified: false

@@ -1,0 +1,30 @@
+identity:
+  name: ruckus_one
+  author: dogkeeper886
+  label:
+    en_US: ruckus_one
+    zh_Hans: ruckus_one
+    pt_BR: ruckus_one
+description:
+  human:
+    en_US: This tool enables users to efficiently manage their Ruckus One tenant.
+    zh_Hans: This tool enables users to efficiently manage their Ruckus One tenant.
+    pt_BR: This tool enables users to efficiently manage their Ruckus One tenant.
+  llm: This tool enables users to efficiently manage their Ruckus One tenant.
+parameters:
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: Query string
+      zh_Hans: 查询语句
+      pt_BR: Query string
+    human_description:
+      en_US: This tool enables users to efficiently manage their Ruckus One tenant.
+      zh_Hans: This tool enables users to efficiently manage their Ruckus One tenant.
+      pt_BR: This tool enables users to efficiently manage their Ruckus One tenant.
+    llm_description: This tool enables users to efficiently manage their Ruckus One tenant.
+    form: llm
+extra:
+  python:
+    source: tools/ruckus_one.py
