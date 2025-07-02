@@ -1,0 +1,17 @@
+identity:
+  author: "jack"
+  name: "ruckus_one"
+  label:
+    en_US: "ruckus_one"
+    zh_Hans: "ruckus_one"
+    pt_BR: "ruckus_one"
+  description:
+    en_US: "Connect to Ruckus One to manage tenant."
+    zh_Hans: "Connect to Ruckus One to manage tenant."
+    pt_BR: "Connect to Ruckus One to manage tenant."
+  icon: "icon.svg"
+tools:
+  - tools/ruckus_one.yaml
+extra:
+  python:
+    source: provider/ruckus_one.py
